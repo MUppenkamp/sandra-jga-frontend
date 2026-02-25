@@ -1,10 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/620920dc-6a06-4b1d-8cbe-cd873efd8e9c/deploy-status)](https://app.netlify.com/sites/is-the-amazing-near-me/deploys)
 
-# amazing
-
-is-the-amazing-near-me.info
-
-_Let's build a site to worship our Amazing Artur by implementing a map based tool to find all stickers_
+# Sandras JGA-Karte
 
 ## Setup
 
@@ -18,6 +14,7 @@ _Let's build a site to worship our Amazing Artur by implementing a map based too
 
 ### Create an .env file for
 
+[//]: # (TODO)
 ```
 NG_APP_BACKEND_URL=https://amazing-backend.vercel.app
 NG_APP_GEONAMES_URL=https://secure.geonames.org/countryCodeJSON

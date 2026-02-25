@@ -11,5 +11,5 @@ import { LeafletMarkerClusterModule } from '@bluehalo/ngx-leaflet-markercluster'
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-  title = 'amazing';
+  title = 'sandras-jga-karte';
 }

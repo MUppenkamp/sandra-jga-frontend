@@ -1,17 +1,17 @@
-<main class="min-h-screen relative bg-amazing-bordeaux-dark">
+﻿<main class="min-h-screen relative bg-bouquet-pink-pastel text-slate-900">
   <div class="text-end pt-4 px-6">
     <button (click)="navigateBack()" class="text-3xl cursor-pointer border-0" type="button">
       X
     </button>
   </div>
-  <div class="m-auto pb-6 px-28 max-sm:px-6 md:max-w-[80vw] lg:max-w-[40vw]">
-    <h1 class="font-bold text-3xl mb-1">Neuer Sticker</h1>
-    <p class="mb-8">Was ist ein Sticker wert, wenn er nicht auf der Karte auftaucht?</p>
+  <div class="m-auto pb-6 px-28 md:px-10 max-sm:px-6 md:max-w-[80vw] lg:max-w-[40vw]">
+    <h1 class="font-bold text-3xl mb-4">Neuer JGA-Spot</h1>
+    <p class="mb-8">Was ist ein JGA-Spot wert, wenn er nicht auf der Karte auftaucht?</p>
     <form (ngSubmit)="onSubmit()" [formGroup]="markerForm" class="flex flex-col">
       <div class="flex flex-col gap-2 mb-12">
         <label for="title">Titel</label>
         <input aria-describedby="title-help" formControlName="name" id="title"/>
-        <small id="title-help">Ort, an dem der Sticker klebt, z.B. "Düsseldorf Hauptbahnhof"</small>
+        <small id="title-help">Ort, an dem der Spot stattfindet, z.B. "Düsseldorf Hauptbahnhof"</small>
       </div>
       <div class="flex flex-col gap-2 mb-12">
         <label for="description">Beschreibung</label>
@@ -23,7 +23,7 @@
       <div class="flex flex-col gap-2 mb-12">
         <label for="uploader">Name (optional)</label>
         <input aria-describedby="uploader-help" formControlName="uploader" id="uploader"/>
-        <small id="uploader-help">Person, die den Sticker aufgehangen hat</small>
+        <small id="uploader-help">Person, die den Spot eingetragen hat</small>
       </div>
       <div class="flex flex-col gap-2 mb-12">
         <!--              We need to fake the label because we cannot change the text "Choose file from the input"-->
@@ -56,7 +56,7 @@
             [disabled]="tab.disabled"
             type="button"
             [ngClass]="{
-              'shadow-inputs border-transparent font-bold': currentTab$() === tab.type
+              'shadow-inputs border-bouquet-lilac border-2 font-bold': currentTab$() === tab.type,
             }"
           >
             {{ tab.name }}
@@ -70,11 +70,11 @@
       }
       <p class="text-center text-xl mt-8">
         @if (uploadState$() === 'uploading') {
-          Sticker wird hinzugefügt... ⏰
+          Spot wird gespeichert...
         } @else if (uploadState$() === 'succeeded') {
-          Sticker wurde erfolgreich hochgeladen! Yay 🎉
+          Spot wurde erfolgreich gespeichert!
         } @else if (uploadState$() === 'failed') {
-          Es ist ein Fehler aufgetreten 😞
+          Es ist ein Fehler aufgetreten
         }
       </p>
       <div class="m-auto mt-2">

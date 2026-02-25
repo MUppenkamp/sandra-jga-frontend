@@ -83,8 +83,8 @@ export class HomeComponent {
       const mapMarker = marker([markerElement.lat, markerElement.lng], {
         title: markerElement.name,
         icon: icon({
-          iconUrl: '/assets/icons/marker-icon.svg',
-          iconSize: [80, 64],
+          iconUrl: '/assets/icons/sandra-bride.png',
+          iconSize: [80, 80],
         }),
       });
 
