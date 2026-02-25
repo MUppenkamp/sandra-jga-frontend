@@ -18,8 +18,8 @@ class LocationService {
    * Somewhere one has to be. At least in one’s heart. Let us give those a home who don’t have one (yet).
    */
   private _homeBase: GeolocationCoordinates = {
-    latitude: 51.21957,
-    longitude: 6.81433,
+    latitude: 50.14511,
+    longitude: 7.16379,
     accuracy: 0,
     altitude: null,
     altitudeAccuracy: null,
