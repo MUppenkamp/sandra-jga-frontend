@@ -1,7 +1,9 @@
 [//]: # (TODO)
-[//]: # ([![Netlify Status]&#40;https://api.netlify.com/api/v1/badges/620920dc-6a06-4b1d-8cbe-cd873efd8e9c/deploy-status&#41;]&#40;https://app.netlify.com/sites/is-the-sandra-jga-near-me/deploys&#41;)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/620920dc-6a06-4b1d-8cbe-cd873efd8e9c/deploy-status)](https://app.netlify.com/projects/sandras-jga/deploys)
 
-# Sandras JGA-Karte
+# Sandras JGA 💍
+[<img src="./src/assets/icons/sandra-bride.png">](https://sandras-jga.netlify.app/)
+
 
 ## Setup
 
