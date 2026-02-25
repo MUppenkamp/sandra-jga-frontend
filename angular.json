@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "amazing": {
+    "sandras-jga": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@ngx-env/builder:application",
           "options": {
-            "outputPath": "dist/amazing",
+            "outputPath": "dist/sandras-jga",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [],
@@ -61,10 +61,10 @@
           },
           "configurations": {
             "production": {
-              "buildTarget": "amazing:build:production"
+              "buildTarget": "sandras-jga:build:production"
             },
             "development": {
-              "buildTarget": "amazing:build:development"
+              "buildTarget": "sandras-jga:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n",
           "options": {
-            "buildTarget": "amazing:build"
+            "buildTarget": "sandras-jga:build"
           }
         },
         "test": {

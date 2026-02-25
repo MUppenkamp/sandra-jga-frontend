@@ -1,4 +1,5 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/620920dc-6a06-4b1d-8cbe-cd873efd8e9c/deploy-status)](https://app.netlify.com/sites/is-the-amazing-near-me/deploys)
+[//]: # (TODO)
+[//]: # ([![Netlify Status]&#40;https://api.netlify.com/api/v1/badges/620920dc-6a06-4b1d-8cbe-cd873efd8e9c/deploy-status&#41;]&#40;https://app.netlify.com/sites/is-the-sandra-jga-near-me/deploys&#41;)
 
 # Sandras JGA-Karte
 

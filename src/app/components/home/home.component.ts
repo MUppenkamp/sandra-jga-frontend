@@ -10,9 +10,11 @@ import { LocationService } from '../../services/location.service';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { lucideLoader2, lucideMapPin, lucidePlus, lucideSearch, lucideX } from '@ng-icons/lucide';
 import { NgClass, NgStyle } from '@angular/common';
-import { ProgressSpinnerComponent } from '../shared/progress-spinner/progress-spinner.component';
 import { LoadingService } from '../../services/loading.service';
 import { MarkerService } from '../../services/marker.service';
+import {
+  ProgressSpinnerComponent
+} from '../shared/progress-spinner/progress-spinner.component';
 
 @Component({
   selector: 'app-home',
@@ -22,8 +24,9 @@ import { MarkerService } from '../../services/marker.service';
     NgIconComponent,
     NgStyle,
     RouterLink,
-    ProgressSpinnerComponent,
-  NgClass],
+    NgClass,
+    ProgressSpinnerComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   viewProviders: [
@@ -76,7 +79,7 @@ export class HomeComponent {
   private _currentPostionMarker: Marker | null = null;
 
   /**
-   * Creates all amazing markers for the layer
+   * Creates all sandra-jga markers for the layer
    */
   private _amazingLayers$ = computed<Marker[]>(() =>
      this._markerService.markers$().map((markerElement) => {
@@ -103,7 +106,7 @@ export class HomeComponent {
   );
 
   /**
-   * Returns all amazing layers and the current position marker layer
+   * Returns all sandra-jga layers and the current position marker layer
    */
   protected allLayers$ = computed<Marker[]>(() => {
     const currentPositionMarker = this.currentPositionMarker$();
