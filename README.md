@@ -1,6 +1,4 @@
-[//]: # (TODO)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/620920dc-6a06-4b1d-8cbe-cd873efd8e9c/deploy-status)](https://app.netlify.com/projects/sandras-jga/deploys)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1e4c8fcb-8272-4fe2-9dd2-67a908d50863/deploy-status)](https://app.netlify.com/projects/sandras-jga/deploys)
 # Sandras JGA 💍
 [<img src="./src/assets/icons/sandra-bride.png">](https://sandras-jga.netlify.app/)
 
