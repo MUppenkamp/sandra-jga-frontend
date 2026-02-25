@@ -1,4 +1,4 @@
-﻿<main class="min-h-screen relative bg-bouquet-pink-pastel text-slate-900">
+<main class="min-h-screen relative bg-jga-background text-jga-text">
   <div class="text-end pt-4 px-6">
     <button (click)="navigateBack()" class="text-3xl cursor-pointer border-0" type="button">
       X
@@ -28,7 +28,7 @@
       <div class="flex flex-col gap-2 mb-12">
         <!--              We need to fake the label because we cannot change the text "Choose file from the input"-->
         <label>Bild (optional)</label>
-        <label class="border rounded-lg py-1.5 px-2 text-base text-center" for="upload">
+        <label class="border rounded-xl py-1.5 px-2 text-base text-center hover:shadow-inputs cursor-pointer" for="upload">
           Datei hochladen
         </label>
         <input (change)="handleFileInput($event)" class="hidden" id="upload" type="file"/>
@@ -56,7 +56,7 @@
             [disabled]="tab.disabled"
             type="button"
             [ngClass]="{
-              'shadow-inputs border-bouquet-lilac border-2 font-bold': currentTab$() === tab.type,
+              'shadow-inputs border-2 font-bold': currentTab$() === tab.type,
             }"
           >
             {{ tab.name }}
@@ -79,7 +79,7 @@
       </p>
       <div class="m-auto mt-2">
         <button
-          class="text-green-400 border-green-600"
+          class="text-jga-green border-jga-green-light hover:shadow-inputs hover:shadow-jga-green-light hover:border-jga-green hover:disabled:shadow-none hover: transition-all duration-200"
           [disabled]="!(markerForm.valid && uploadState$() !== 'uploading' && uploadState$() !== 'failed')"
           type="submit">
           Speichern

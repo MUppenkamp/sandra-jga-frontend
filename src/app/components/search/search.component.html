@@ -1,4 +1,4 @@
-﻿<main class="min-h-screen relative bg-bouquet-pink-pastel">
+<main class="min-h-screen relative bg-jga-background text-jga-text">
   <div class="text-end pt-4 px-6">
     <button type="button" class="text-3xl cursor-pointer border-0" routerLink="">X</button>
   </div>
@@ -14,15 +14,15 @@
     </div>
     <div class="flex flex-col gap-4">
       @if (foundMarkers.length) {
-        <h3>{{ foundMarkers.length }} Spots gefunden</h3>
+        <h3>{{ foundMarkers.length }} {{ spots(foundMarkers) }} gefunden</h3>
       }
       @for (marker of foundMarkers; track marker.id) {
         <a
           (click)="navigate(marker)"
-          class="bg-bouquet-orange hover:bg-bouquet-pink p-6 cursor-pointer rounded-lg">
+          class="text-white bg-jga-blue hover:bg-jga-green-light p-6 cursor-pointer rounded-xl">
           <div class="flex gap-4 items-center">
             @if (marker.country && marker.country.length === 2) {
-              <img [src]="getFlagUrl(marker.country)" class="w-6 h-6 rounded-lg" />
+              <img [src]="getFlagUrl(marker.country)" class="w-6 h-6 rounded-xl" />
             }
             <h4 class="text-xl">{{ marker.name }}</h4>
           </div>

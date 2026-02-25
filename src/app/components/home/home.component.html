@@ -14,7 +14,7 @@
         class="absolute w-20 h-20 z-[999]"
         [ngStyle]="contextMenuPositioning"
       >
-        <div class="fixed rounded-lg p-2 bg-bouquet-pink-pastel text-black">
+        <div class="fixed rounded-xl p-2 bg-jga-rose-light text-black">
           <a
             class="!text-black text-base"
             routerLink="create"
@@ -30,7 +30,7 @@
   @defer (when !isLoading$()) {
     @if (!isInfoboxClosed$()) {
       <div
-        class="fixed z-[999] bg-bouquet-pink-pastel text-black rounded-lg py-6 px-8 mr-16 top-4 left-16 max-md:bottom-4 max-md:top-auto"
+        class="fixed z-[999] bg-jga-rose-light text-black rounded-xl py-6 px-8 mr-16 top-4 left-16 max-md:bottom-4 max-md:top-auto"
       >
         <div class="flex justify-between gap-x-6 max-md:gap-x-1">
           <h2 class="text-3xl font-bold pb-1">
@@ -45,7 +45,7 @@
           </button>
         </div>
 
-        <p class="opacity-60 pb-5 italic">Heute feiern wir Sandra!</p>
+        <p class="text-jga-text pb-5 italic">Wo findet ihr die weintrinkende, die irische und die griechische Sandra?</p>
         <p>Finde einen von {{ markerCount$() }} Sandra-JGA-Spots!</p>
       </div>
     }
@@ -53,7 +53,7 @@
     <div class="flex gap-x-3 fixed z-[999] px-3 py-2 border-0 max-sm:max-10 top-4 end-4">
       <button
         type="button"
-        class="bg-wedding-mint border-transparent flex items-center text-black"
+        class="bg-jga-green border-transparent flex items-center text-black"
         (click)="updatePostionAndViewportCenter()"
       >
         <ng-icon
@@ -64,14 +64,14 @@
       </button>
       <button
         type="button"
-        class="bg-bouquet-lilac-pastel border-transparent flex items-center text-black"
+        class="bg-jga-lilac-light border-transparent flex items-center text-black"
         routerLink="search"
       >
         <ng-icon size="32" name="lucideSearch"/>
       </button>
       <button
         type="button"
-        class="bg-bouquet-orange-pastel border-transparent flex items-center text-black"
+        class="bg-jga-orange-light border-transparent flex items-center text-black"
         routerLink="create"
       >
         <ng-icon size="32" name="lucidePlus"/>
@@ -80,7 +80,7 @@
 
   } @placeholder {
     <div class="fixed flex justify-center z-[999] bottom-4 w-full ">
-      <div class="inline-flex justify-center gap-8 p-4 bg-bouquet-pink-pastel text-black rounded-md w-auto">
+      <div class="inline-flex justify-center gap-8 p-4 bg-jga-rose-light text-black rounded-md w-auto">
         <p class="self-center">Spots werden geladen...</p>
         <progress-spinner [show$]="isLoading$()"/>
       </div>

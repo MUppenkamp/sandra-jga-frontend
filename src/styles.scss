@@ -9,42 +9,35 @@ body {
   @apply text-white;
 }
 
-input {
-  @apply rounded-lg p-1 text-black border border-bouquet-lilac outline-none;
+// Label Styles
+label {
+  @apply border-jga-rose text-xl transition-all duration-200;
 }
 
-label {
-  @apply border-bouquet-lilac;
+// Button Styles
+button {
+  @apply border rounded-xl py-1.5 px-2 border-jga-rose;
+}
+
+button:disabled {
+  @apply border-gray-500 text-gray-500 bg-gray-200 !important;
+}
+
+// Input Styles
+input {
+  @apply rounded-xl p-2 text-black border border-jga-rose-light outline-none;
 }
 
 input:focus {
-  @apply shadow-inputs transition-all duration-200;
+  @apply shadow-inputs transition-all duration-200 outline-none border-jga-red;
 }
 
-input:focus-visible {
-  @apply outline-none border-bouquet-red;
-}
-
-/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
 input[type='number'] {
   -moz-appearance: textfield;
-}
-
-button {
-  @apply border rounded-lg py-1.5 px-2 border-bouquet-lilac;
-}
-
-button:disabled {
-  @apply border-gray-500 text-gray-500;
-}
-
-label {
-  @apply text-xl;
 }

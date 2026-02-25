@@ -50,4 +50,8 @@ export class SearchComponent {
     }, false);
     this._router.navigate(['']);
   }
+
+  protected spots(foundMarkers: Marker[]): string {
+    return foundMarkers.length === 1 ? 'Spot' :  'Spots';
+  }
 }
