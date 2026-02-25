@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "https://amazing-backend.vercel.app",
+    "target": "https://sandra-jga-backend.vercel.app",
     "secure": false,
     "pathRewrite": {
       "^/api": ""

@@ -17,7 +17,7 @@
 
 [//]: # (TODO)
 ```
-NG_APP_BACKEND_URL=https://amazing-backend.vercel.app
+NG_APP_BACKEND_URL=https://sandra-jga-backend.vercel.app
 NG_APP_GEONAMES_URL=https://secure.geonames.org/countryCodeJSON
 NG_APP_GEONAMES_USER=<SecretUserName: Ask if needed>
 ```
