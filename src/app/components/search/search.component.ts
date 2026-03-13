@@ -52,6 +52,6 @@ export class SearchComponent {
   }
 
   protected spots(foundMarkers: Marker[]): string {
-    return foundMarkers.length === 1 ? 'Spot' :  'Spots';
+    return foundMarkers.length === 1 ? 'Sticker' :  'Sticker';
   }
 }

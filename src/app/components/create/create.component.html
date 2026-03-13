@@ -5,13 +5,13 @@
     </button>
   </div>
   <div class="m-auto pb-6 px-28 md:px-10 max-sm:px-6 md:max-w-[80vw] lg:max-w-[40vw]">
-    <h1 class="font-bold text-3xl mb-4">Neuer JGA-Spot</h1>
-    <p class="mb-8">Was ist ein JGA-Spot wert, wenn er nicht auf der Karte auftaucht?</p>
+    <h1 class="font-bold text-3xl mb-4">Neuer JGA-Sticker</h1>
+    <p class="mb-8">Was ist ein JGA-Sticker wert, wenn er nicht auf der Karte auftaucht?</p>
     <form (ngSubmit)="onSubmit()" [formGroup]="markerForm" class="flex flex-col">
       <div class="flex flex-col gap-2 mb-12">
         <label for="title">Titel</label>
         <input aria-describedby="title-help" formControlName="name" id="title"/>
-        <small id="title-help">Ort, an dem der Spot stattfindet, z.B. "Düsseldorf Hauptbahnhof"</small>
+        <small id="title-help">Ort, an dem sich der Sticker befindet, z.B. "Düsseldorf Hauptbahnhof"</small>
       </div>
       <div class="flex flex-col gap-2 mb-12">
         <label for="description">Beschreibung</label>
@@ -23,7 +23,7 @@
       <div class="flex flex-col gap-2 mb-12">
         <label for="uploader">Name (optional)</label>
         <input aria-describedby="uploader-help" formControlName="uploader" id="uploader"/>
-        <small id="uploader-help">Person, die den Spot eingetragen hat</small>
+        <small id="uploader-help">Person, die den Sticker geklebt hat</small>
       </div>
       <div class="flex flex-col gap-2 mb-12">
         <!--              We need to fake the label because we cannot change the text "Choose file from the input"-->
@@ -70,9 +70,9 @@
       }
       <p class="text-center text-xl mt-8">
         @if (uploadState$() === 'uploading') {
-          Spot wird gespeichert...
+          Sticker wird gespeichert...
         } @else if (uploadState$() === 'succeeded') {
-          Spot wurde erfolgreich gespeichert!
+          Sticker wurde erfolgreich gespeichert!
         } @else if (uploadState$() === 'failed') {
           Es ist ein Fehler aufgetreten
         }

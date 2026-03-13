@@ -20,7 +20,7 @@
             routerLink="create"
             [queryParams]="{ lat: clickedLat$(), lng: clickedLng$() }"
           >
-            Spot hinzufügen
+              Sticker hinzufügen
           </a>
         </div>
       </div>
@@ -46,7 +46,7 @@
         </div>
 
         <p class="text-jga-text pb-5 italic">Wo findet ihr die weintrinkende, die irische und die griechische Sandra?</p>
-        <p>Finde einen von {{ markerCount$() }} Sandra-JGA-Spots!</p>
+        <p>Finde einen von {{ markerCount$() }} Sandra-JGA-Sticker!</p>
       </div>
     }
 
@@ -81,7 +81,7 @@
   } @placeholder {
     <div class="fixed flex justify-center z-[999] bottom-4 w-full ">
       <div class="inline-flex justify-center gap-8 p-4 bg-jga-rose-light text-black rounded-md w-auto">
-        <p class="self-center">Spots werden geladen...</p>
+        <p class="self-center">Sticker werden geladen...</p>
         <progress-spinner [show$]="isLoading$()"/>
       </div>
     </div>
